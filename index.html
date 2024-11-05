@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web immobilier proposant des annonces de propriétés à vendre et à louer.">
+    <title>Agence Immobilière - Accueil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <style>
+        /* Styles de base pour la mise en page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .search-section {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        .search-section input[type="text"], .search-section select {
+            padding: 10px;
+            margin: 10px 5px;
+            width: 200px;
+        }
+        .search-section button {
+            padding: 10px 20px;
+            background-color: #2d87f0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .properties {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .property {
+            background-color: white;
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property .details {
+            padding: 20px;
+        }
+        .property h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .property .price {
+            color: #2d87f0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header avec logo et navigation -->
+    <header>
+        <h1>Agence Immobilière</h1>
+        <p>Trouvez votre bien idéal avec nous</p>
+    </header>
+
+    <!-- Navigation principale -->
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Propriétés</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section de recherche -->
+    <section class="search-section">
+        <h2>Recherchez votre bien immobilier</h2>
+        <form>
+            <input type="text" placeholder="Ville, quartier, ou type de bien" required>
+            <select>
+                <option value="">Type de propriété</option>
+                <option value="appartement">Appartement</option>
+                <option value="maison">Maison</option>
+                <option value="terrain">Terrain</option>
+            </select>
+            <select>
+                <option value="">Nombre de chambres</option>
+                <option value="1">1 chambre</option>
+                <option value="2">2 chambres</option>
+                <option value="3">3 chambres</option>
+                <option value="4">4 chambres</option>
+            </select>
+            <button type="submit">Rechercher</button>
+        </form>
+    </section>
+
+    <!-- Section des propriétés en vedette -->
+    <section class="properties">
+        <div class="property">
+            <img src="https://via.placeholder.com/400x200" alt="Propriété 1">
+            <div class="details">
+                <h3>Maison à vendre à Paris</h3>
+                <p>3 chambres, 2 salles de bain</p>
+                <p class="price">350 000 €</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="https://via.placeholder.com/400x200" alt="Propriété 2">
+            <div class="details">
+                <h3>Appartement à louer à Lyon</h3>
+                <p>2 chambres, 1 salle de bain</p>
+                <p class="price">1 200 €/mois</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="https://via.placeholder.com/400x200" alt="Propriété 3">
+            <div class="details">
+                <h3>Terrain à vendre à Marseille</h3>
+                <p>500 m²</p>
+                <p class="price">90 000 €</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Agence Immobilière. Tous droits réservés.</p>
+        <p>Suivez-nous sur les réseaux sociaux : [Facebook] [Instagram] [LinkedIn]</p>
+    </footer>
+
+</body>
+</html>
